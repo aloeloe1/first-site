@@ -1,0 +1,134 @@
+  body {
+            background-color: #bcdecf;
+        }
+
+        div.box {
+            width: 700px;
+            margin: 50px auto 0;
+        }
+
+        div.box table {
+            border-collapse: collapse;
+            width: inherit;
+            text-align: center;
+            background-color: #f6f6f6;
+        }
+
+        div.box table td, div.box th {
+            border: 1px solid #999;
+        }
+
+        div.box th {
+            height: 40px;
+        }
+
+        div.box table tbody img {
+            height: 50px;
+        }
+
+        div.box table tbody tr span {
+            cursor: default;
+        }
+
+        div.box table tbody tr td:nth-child(2) img {
+            vertical-align: middle;
+        }
+
+        div.box table tbody tr td:nth-child(4) span {
+            display: inline-block;
+            width: 15px;
+            line-height: 30px;
+            background-color: #666;
+            color: #eee;
+            vertical-align: middle;
+        }
+
+        div.box table tbody tr td:nth-child(4) input {
+            width: 20px;
+            height: 20px;
+            outline: none;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        div.box table tbody tr td:nth-child(6) span {
+            padding: 4px 10px;
+            background-color: #999;
+            color: white;
+        }
+
+        div.box div.bottom {
+            padding: 15px 0;
+            margin-top: 15px;
+            height: 25px;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        div.box div.bottom span.delAll {
+            cursor: default;
+        }
+
+        div.box div.bottom div.js {
+            padding: 0 6px;
+            background-color: #00A5FF;
+            color: white;
+            margin-right: 10px;
+            cursor: default;
+        }
+
+        div.box div.bottom aside div {
+            display: inline-block;
+        }
+
+        div.box div.bottom aside div span {
+            position: absolute;
+            width: 50px;
+            line-height: 20px;
+            padding: 0 5px;
+            background-color: rgba(255, 255, 255, .4);
+            color: #333;
+            font-size: 10px;
+            margin-left: -60px;
+            margin-top: 20px;
+            transform: rotate(30deg);
+            cursor: pointer;
+        }
+
+        div.box div.bottom aside img {
+            height: 60px;
+            vertical-align: middle;
+        }
+
+        div.box div.bottom aside {
+            position: absolute;
+            background-color: #0a74cb;
+            width: 100%;
+            top: -70px;
+            padding: 5px;
+            box-sizing: border-box;
+            display: none;
+        }
+
+        div.box div.bottom aside.on {
+            display: block;
+        }
+
+        div.box div.bottom aside:after {
+            position: absolute;
+            content: "";
+            border: 10px solid transparent;
+            border-top-color: #0a74cb;
+            bottom: -19px;
+            right: 280px;
+        }
+
+        div.box div.bottom a, div.box div.bottom a:visited {
+            color: #0b97ff;
+            text-decoration: none;
+        }
+        #name{
+            color: white;
+        }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <head><link rel="stylesheet" href="1.css">-->
+<!--    <script src="shop.js" type="text/javascript" charset="utf-8"></script>-->
+    <meta charset="UTF-8">
+    <title>Anime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="anime.css">
+<!--    <meta http-equiv="refresh" content="1">-->
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <img src="image/reesushilogo-pi77f28rnoidy0g1dqmdtdrqcdrkwoicoppwx4gqqy.png" alt="logo" class="logo">
+        <ul>
+            <li class="menutitle"><a href="home.html">Home</a> </li>
+            <li class="menutitle"><a href="anime.html">Shop</a> </li>
+            <li class="menutitle"><a href="info.html">Info</a> </li>
+
+        </ul>
+    </nav>
+</div>
+<div class="container1">
+    <ul class="images2">
+        <li class="img"></li>
+        <li class="img"></li>
+        <li class="img"></li>
+
+
+    </ul>
+    <ul class="min-images">
+        <li class="min"></li>
+        <li class="min"></li>
+        <li class="min"></li>
+    </ul>
+    <div class="button">
+        <div class="button-left"><</div>
+        <div class="button-right">></div>
+    </div>
+</div>
+
+<div class="new_anime">
+    <h2>Sushi</h2>
+    <nav>
+<!--    <a id="anchorsushi"></a>-->
+        <div class="book-iframe">
+    <ul class="book">
+        <li class="book-img"><img src="image/ebifriedmaki.png" alt="sushi" class="book-img-img"></li>
+        <li class="book-img"><img src="image/maguro-1.png" alt="sushi" class="book-img-img"></li>
+        <li class="book-img"><img src="image/inari.png" alt="sushi" class="book-img-img"></li>
+        <li class="book-img"><img src="image/kani.png" alt="sushi" class="book-img-img"></li>
+        <li class="book-img"><img src="image/oshinoko.png" alt="sushi" class="book-img-img"></li>
+        <li class="book-img"><img src="image/sake-1.png" alt="sushi" class="book-img-img"></li>
+        <li class="book-img"><img src="image/unagi.png" alt="sushi" class="book-img-img"></li>
+
+    </ul>
+</div>
+    <ul id="arena1">
+
+        <li class="img_iframe"><a href="home.html" ><img src="image/avocado.png" alt="dog" class="imgsize"></a><pre class="new_name" >avocado maki<br>$10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/Kappa.png" alt="dog" class="imgsize"></a><pre class="new_name" > kappa maki<br> $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/oshinoko.png" alt="dog" class="imgsize"></a><pre class="new_name" > oshinoko maki<br> $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/ebifriedmaki.png" alt="dog" class="imgsize"></a><pre class="new_name" > ebifriedmaki<br> $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/tamago-1.png" alt="dog" class="imgsize"></a><pre class="new_name"  >  tamago maki<br>  $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/kani.png" alt="dog" class="imgsize"></a><pre class="new_name" >  kani maki<br>  $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/unagi.png" alt="dog" class="imgsize"></a><pre class="new_name" >  unagi maki<br>  $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/sake-1.png" alt="dog" class="imgsize"></a><pre class="new_name" >  sake maki<br>  $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/maguro-1.png" alt="dog" class="imgsize"></a><pre class="new_name" >  maguro maki<br>  $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+        <li class="img_iframe"><a href="home.html" ><img src="image/inari.png" alt="dog" class="imgsize"></a><pre class="new_name" >  inari maki<br>  $10 <button class="winkelwagen"><a href="1.html" class="winkkelwagen_button">in winkkelwagen</a></button></pre></li>
+    </ul>
+    </nav>
+</div>
+<script>
+        let left= document.querySelector('.button-left')
+        let right= document.querySelector('.button-right')
+        let min = document.querySelectorAll('.min')
+        let images= document.querySelector('.images2')
+
+        let index=0
+        let time
+        function position(){
+            images.style.left =(index *-100) + '%'
+        }
+        function add() {
+            if (index >= min.length - 1) {
+                index = 0
+            } else {
+                index++
+            }
+        }
+        function desc() {
+            if (index < 1) {
+                index = min.length - 1
+            } else {
+                index--
+            }
+        }
+        function timer() {
+                time = setInterval(() => {
+                    index++
+                    desc()
+                    add()
+                    position()
+                }, 3000)
+            }
+        left.addEventListener('click',()=>{
+            desc()
+            position()
+            clearInterval(time)
+            timer()
+        })
+        right.addEventListener('click',()=> {
+            add()
+            position()
+            clearInterval(time)
+            timer()
+        })
+        for (let i=0;i<min.length;i++){
+            min[i].addEventListener('click',()=>{
+                index=i
+                position()
+                clearInterval(time)
+                timer()
+                })
+        }
+        timer()
+</script>
+</body>
+</html>

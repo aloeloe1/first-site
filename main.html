@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/OIP.jfif">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="zuohuang cai">
+<!--    <meta http-equiv="refresh" content=1>  &lt;!&ndash;刷新时间&ndash;&gt;-->
+    <title>你好</title>
+</head>
+<body>
+<form name="form" method="post" action="mailto:zc26226@gmail.com" enctype="text/plain">
+    <table >
+        <tr>
+            <th>姓名</th>
+            <td><input type="text" name="name" class="popup-btn"></td>
+        </tr>
+
+        <tr>
+            <th>联系电话</th>
+            <td><input type="text" name="iphone" class="popup-btn"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input name="close"  type="bottn" οnclick="getMailtoUrl()" class="popup-btn popup-btn1" value="提交申请">
+            </td>
+        </tr>
+    </table>
+</form>
+<form action="image/OIP.jfif">
+    <input type="text" id="112">
+    <label for="112">112</label><br>
+    <input type="text" id="223">
+    <label for="223">223</label>
+    <input type="submit" value="submit">
+
+</form>
+    <button type="button" onclick="time()"> click me</button>
+    <p id="text" style="color:red">我是123</p>
+    <img src="https://th.bing.com/th/id/OIP.2tjYhi2pzrwnwLpTMkA83gHaFj?w=220&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="An image">
+    <script>
+        function time() {
+            var img = new Image();
+            img.src = "image/OIP.jfif";
+            img.alt = "An image";
+            document.getElementById("text").innerHTML = "";
+            document.getElementById("text").appendChild(img);
+        }
+    </script>
+<script type="text/javascript">
+    function getMailtoUrl() {
+        var args = [];
+        if (typeof subject !== 'undefined') {
+            args.push('subject=' + encodeURIComponent('主题内容'));
+        }
+        var name = $("input[name='name']").val();
+        var iphone = $("input[name='iphone']").val();
+        var body = name +"\n"+iphone
+        if (typeof body !== 'undefined') {
+            args.push('body=' + encodeURIComponent(body))
+        }
+
+        var url = 'mailto:' + encodeURIComponent('service@kashuo.com');
+        if (args.length > 0) {
+            url += '?' + args.join('&');
+        }
+        console.log(url);
+        window.location = url;
+        return url;
+    }
+</script>
+</body>
+</html>
